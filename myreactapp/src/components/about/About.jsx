@@ -42,7 +42,7 @@ const About = () => {
               businesses to assess the performance of the business or a certain product.
               As a software engineer, proficient in both frontend and backend technologies such as react, flask, fastapi, I build responsive 
               web and mobile applications for my clients. This also helps me build end to end machine learning projects 
-              for my clients. I am fluent in both english and french and i can work in both remote and onsite settings
+              for my clients. I am fluent in both english and french and i can work in both remote and onsite settings.
             </p>
             <a href="#contact" className="btn btn-primary">
               Let's talk
