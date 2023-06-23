@@ -1,0 +1,94 @@
+#portfolio{
+    margin-bottom:  20rem;
+    padding-top: 3rem;
+}
+.portfolio__container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2.5rem;
+}
+.portfolio__item{
+    background: var(--color-bg-variant);
+    padding: 1.2rem;
+    border-radius: 2rem;
+    height: 350px;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    background: var(--color-primary);
+}
+.portfolio__item:hover{
+    border-color: var(--color-primary);
+    background: transparent;
+}.white_link{
+    color: white;
+    border: 1px solid white;
+}
+.portfolio__item:hover .white_link{
+    color: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.portfolio__item:hover h3{
+    color: var(--color-primary);
+}
+
+.portfolio__item:hover .white_link:hover{
+    color: white;
+}
+.whiteborder{
+    border-color: white;
+}
+.portfolio__item-img{
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+.portfolio__item h3{
+    margin: 1.2rem;
+}
+.portfolio__item-cta{
+    display: flex;
+    gap: 1rem;
+
+} 
+
+ /*-------------------------media wuery for medium devices---------------------------------------*/
+ @media only screen and (max-width:1024px){ 
+    .portfolio__container{
+        grid-template-columns: 1fr 1fr;/* 50 0n left. 50 on the right */
+        gap: 6rem;
+    }
+    .portfolio__item-img{
+        height: 400px;
+        margin-bottom: -200px;
+    }
+    .portfolio__item{
+        height: 450px;
+        width: 330px;
+        margin: auto;
+    }
+
+ }
+   /*-------------------------media wuery for small devices---------------------------------------*/
+ @media only screen and (max-width:600px){
+    .portfolio__container{
+        grid-template-columns: 1fr ;
+        gap: 1rem;
+    }
+    #portfolio{
+        margin-bottom: 160rem;
+    }    
+     }
+     @media only screen and (max-width: 410px){
+        .portfolio__item{
+            height: 400px;
+            gap: 3rem;
+        }
+        
+     }
+
+     @media only screen and (max-width:390px){
+        #portfolio{
+            margin-bottom: 130rem;
+            margin-top: 40rem;
+        } 
+     }
